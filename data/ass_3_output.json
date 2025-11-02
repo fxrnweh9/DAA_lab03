@@ -1,0 +1,116 @@
+{
+  "results": [
+    {
+      "graph_id": 1,
+      "input_stats": {
+        "vertices": 5,
+        "edges": 7
+      },
+      "prim": {
+        "edges": [
+          {
+            "from": "A",
+            "weight": 3,
+            "to": "C"
+          },
+          {
+            "from": "B",
+            "weight": 2,
+            "to": "C"
+          },
+          {
+            "from": "B",
+            "weight": 5,
+            "to": "D"
+          },
+          {
+            "from": "D",
+            "weight": 6,
+            "to": "E"
+          }
+        ],
+        "total_cost": 16,
+        "steps": 6,
+        "execution_time_ms": 1
+      },
+      "kruskal": {
+        "edges": [
+          {
+            "from": "B",
+            "weight": 2,
+            "to": "C"
+          },
+          {
+            "from": "A",
+            "weight": 3,
+            "to": "C"
+          },
+          {
+            "from": "B",
+            "weight": 5,
+            "to": "D"
+          },
+          {
+            "from": "D",
+            "weight": 6,
+            "to": "E"
+          }
+        ],
+        "total_cost": 16,
+        "steps": 71,
+        "execution_time_ms": 4
+      }
+    },
+    {
+      "graph_id": 2,
+      "input_stats": {
+        "vertices": 4,
+        "edges": 5
+      },
+      "prim": {
+        "edges": [
+          {
+            "from": "A",
+            "weight": 1,
+            "to": "B"
+          },
+          {
+            "from": "B",
+            "weight": 2,
+            "to": "C"
+          },
+          {
+            "from": "C",
+            "weight": 3,
+            "to": "D"
+          }
+        ],
+        "total_cost": 6,
+        "steps": 4,
+        "execution_time_ms": 0
+      },
+      "kruskal": {
+        "edges": [
+          {
+            "from": "A",
+            "weight": 1,
+            "to": "B"
+          },
+          {
+            "from": "B",
+            "weight": 2,
+            "to": "C"
+          },
+          {
+            "from": "C",
+            "weight": 3,
+            "to": "D"
+          }
+        ],
+        "total_cost": 6,
+        "steps": 52,
+        "execution_time_ms": 0
+      }
+    }
+  ]
+}
